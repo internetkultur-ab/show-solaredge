@@ -34,11 +34,11 @@ $data = getData($_GET['key'], $_GET['site']);
   </head>
   <body>
     <main class="container">
-      <p>Produktion just nu: <?php echo $data['overview']['currentPower']['power'] / 100 ; ?> kW</p>
-      <p>Dagens produktion: <?php echo $data['overview']['lastDayData']['energy'] / 1000; ?> kWh</p>
-      <p>Månadens produktion: <?php echo $data['overview']['lastMonthData']['energy'] / 1000000; ?> MWh</p>
-      <p>Sedan installation: <?php echo $data['overview']['lifeTimeData']['energy'] / 1000000; ?> MWh</p>
-      <p>Senast uppdaterad: <?php echo $data['overview']['lastUpdateTime']; ?></p>
+      <p>Produktion just nu: <br><?php echo $data['overview']['currentPower']['power'] / 100 ; ?> kW</p>
+      <p>Dagens produktion: <br><?php echo $data['overview']['lastDayData']['energy'] / 1000; ?> kWh</p>
+      <p>Månadens produktion: <br><?php echo $data['overview']['lastMonthData']['energy'] / 1000000; ?> MWh</p>
+      <p>Sedan installation: <br><?php echo $data['overview']['lifeTimeData']['energy'] / 1000000; ?> MWh</p>
+      <p>Senast uppdaterad: <br><?php echo $data['overview']['lastUpdateTime']; ?></p>
     </main>
   </body>
 </html>
