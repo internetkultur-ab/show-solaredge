@@ -21,6 +21,23 @@ function getData($key, $site) {
 
 }
 $data = getData($_GET['key'], $_GET['site']);
-print_r($data);
+
 
 ?>
+<!doctype html>
+<html lang="se">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/picocss/1.5.2/pico.min.css" integrity="sha512-3gFq2IXMVlAQaUyahzhjDRivv0yqyXTb7xiy6ivTaG5Uz4hKI54uYxpQefdomgDVQ11eJVUbXG0YdPMDISiGgg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <main class="container">
+      <p>Produktion just nu: <?php echo $data['overview']['currentPower']['power']; ?></p>
+      <p>Gårdagens produktion: <?php echo $data['overview']['lastDayData']['energy']; ?></p>
+      <p>Förra månadens produktion: <?php echo $data['overview']['lastMonthData']['energy']; ?></p>
+      <p>Senast uppdaterad: <?php echo $data['overview']['lastUpdateTime']; ?></p>
+    </main>
+  </body>
+</html>
