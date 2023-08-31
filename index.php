@@ -20,7 +20,7 @@ function getData($key, $site) {
     return $data;
 
 }
-
+$data = getData($_GET['key'], $_GET['site']);
 print_r($data);
 
 ?>
