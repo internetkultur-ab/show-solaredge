@@ -1,5 +1,4 @@
 <?php
-setlocale( LC_NUMERIC, 'sv_SE.utf8' );
 
 if (!isset($_GET['key']) or empty($_GET['key']) or !isset($_GET['site']) or empty($_GET['site'])) {
     die();
@@ -31,7 +30,7 @@ $data = getData($_GET['key'], $_GET['site']);
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/picocss/1.5.2/pico.min.css" integrity="sha512-3gFq2IXMVlAQaUyahzhjDRivv0yqyXTb7xiy6ivTaG5Uz4hKI54uYxpQefdomgDVQ11eJVUbXG0YdPMDISiGgg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Hello, world!</title>
+    <title>Solaredge</title>
   </head>
   <body>
     <main class="container">
