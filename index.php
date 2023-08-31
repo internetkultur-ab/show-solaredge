@@ -1,4 +1,5 @@
 <?php
+setlocale( LC_NUMERIC, 'sv_SE.utf8' );
 
 if (!isset($_GET['key']) or empty($_GET['key']) or !isset($_GET['site']) or empty($_GET['site'])) {
     die();
