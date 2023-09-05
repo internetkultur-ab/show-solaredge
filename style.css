@@ -34,11 +34,16 @@
 
 .key {
     font-size: 23px;
-
 }
 
-.value {
-    font-size: 26px;
+.value1 {
+    font-size: 32px;
+    margin-top: 16px;
+}
+
+.value2 {
+    font-size: 28px;
+    margin-top: -15px;
 }
 
 
