@@ -28,22 +28,22 @@
     text-align: center;
     color: white;
     font-family: "Foundry Sterling W01", arial, sans-serif;
-    padding: 10px 0;
+    padding: 15px;
 
 }
 
 .key {
-    font-size: 23px;
+    font-size: 4vw;
 }
 
 .value1 {
-    font-size: 32px;
-    margin-top: 16px;
+    font-size: 6vw;
+    margin-top: 5vw;
 }
 
 .value2 {
-    font-size: 28px;
-    margin-top: -15px;
+    font-size: 5vw;
+    margin-top: -2vw;
 }
 
 
