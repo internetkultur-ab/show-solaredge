@@ -41,7 +41,7 @@ $data = getData($_GET['key'], $_GET['site']);
 <div class="div2 box"><p><span class="key">Energi idag</span><br>
 <span class="value">
 <?php echo number_format($data['overview']['lastDayData']['energy'] / 1000, 2, ",", ""); ?><br>kWh</span></p></div>
-<div class="div3 box"><p><span class="key">Månadensenergi</span><br>
+<div class="div3 box"><p><span class="key">Månadsenergi</span><br>
 <span class="value">
 <?php echo number_format($data['overview']['lastMonthData']['energy'] / 1000000, 2, ",", ""); ?><br>MWh</span></p></div>
 <div class="div4 box"><p><span class="key">Total energi</span><br>
